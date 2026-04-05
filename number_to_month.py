@@ -1,29 +1,29 @@
-# Replace the "ANSWER HERE" for your answer
-
 def number_to_month(month):
+    # Recibe un número del 1 al 12 y devuelve el nombre del mes correspondiente
+    # Si el número no está en ese rango, devuelve "error"
     if month == 1:
         return "enero"
-    if month == 2:
+    elif month == 2:
         return "febrero"
-    if month == 3:
+    elif month == 3:
         return "marzo"
-    if month == 4:
+    elif month == 4:
         return "abril"
-    if month == 5:
+    elif month == 5:
         return "mayo"
-    if month == 6:
+    elif month == 6:
         return "junio"
-    if month == 7:
+    elif month == 7:
         return "julio"
-    if month == 8:
+    elif month == 8:
         return "agosto"
-    if month == 9:
+    elif month == 9:
         return "septiembre"
-    if month == 10:
+    elif month == 10:
         return "octubre"
-    if month == 11:
+    elif month == 11:
         return "noviembre"
-    if month == 12:
+    elif month == 12:
         return "diciembre"
     else:
         return "error"

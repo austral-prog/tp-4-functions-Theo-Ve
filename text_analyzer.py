@@ -19,11 +19,15 @@ def count_consonants(text):
 # ---- Funciones a implementar ----
 
 def total_letters(text):
+    # Calcula la cantidad total de letras sumando vocales y consonantes
     vowels = count_vowels(text)
     consonants = count_consonants(text)
     return vowels + consonants
 
+
 def vowel_percentage(text):
+    # Calcula el porcentaje de vocales sobre el total de letras
+    # Si no hay letras, devuelve 0.0
     vowels = count_vowels(text)
     total = total_letters(text)
 
@@ -33,7 +37,10 @@ def vowel_percentage(text):
     porcentaje = (vowels / total) * 100
     return round(porcentaje, 1)
 
+
 def analyze_text(text):
+    # Genera un resumen del texto con cantidad de vocales, consonantes,
+    # total de letras y porcentaje de vocales
     vowels = count_vowels(text)
     consonants = count_consonants(text)
     total = total_letters(text)

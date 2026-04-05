@@ -11,6 +11,9 @@ def is_positive(n):
 # ---- Función a implementar ----
 
 def classify_number(n):
+    # Clasifica un número según si es cero, par/impar y positivo/negativo
+    # Usa funciones auxiliares: is_even() e is_positive()
+
     if n == 0:
         return "zero"
     elif is_even(n) and is_positive(n):

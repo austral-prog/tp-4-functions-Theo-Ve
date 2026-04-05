@@ -1,4 +1,6 @@
 def roots(a, b, c):
+    # Calcula las raíces de la ecuación usando el discriminante
+    # Devuelve dos, una o ninguna raíz según el caso
     discriminante = b**2 - 4*a*c
 
     if discriminante > 0:
@@ -15,11 +17,13 @@ def roots(a, b, c):
 
 
 def value_y(a, b, c, x):
+    # Calcula el valor de la función cuadrática para un valor dado de x
     y = a*x**2 + b*x + c
     return y
 
 
 def to_string(a, b, c):
+    # Devuelve la función en formato string, omitiendo términos si son 0
     if a == 0 and b == 0:
         return f"f(x) = {c}"
 
@@ -33,6 +37,8 @@ def to_string(a, b, c):
 
 
 def derivation(a, b, c):
+    # Devuelve la derivada de la función cuadrática como string
+    # (ax^2 → 2ax, bx → b, c → 0)
     if a == 0 and b == 0:
         return "f'(x) = 0"
 
