@@ -6,8 +6,8 @@ def roots(a, b, c):
     discriminante = b**2 - 4*a*c
 
     if discriminante > 0:
-        r1 = (-b + discriminante)/(2*a)
-        r2 = (-b - discriminante)/(2*a)
+        r1 = (-b + discriminante**0.5)/(2*a)
+        r2 = (-b - discriminante**0.5)/(2*a)
         return f"({r1}, {r2})"
 
     elif discriminante == 0:
