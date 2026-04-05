@@ -1,7 +1,3 @@
-# Replace the "ANSWER HERE" for your answer
-from encodings.rot_13 import rot13
-
-
 def roots(a, b, c):
     discriminante = b**2 - 4*a*c
 
@@ -32,6 +28,8 @@ def to_string(a, b, c):
 
     if b == 0:
         return f"f(x) = {a} * X^2 + {c}"
+
+    return f"f(x) = {a} * X^2 + {b} * X + {c}"
 
 
 def derivation(a, b, c):
