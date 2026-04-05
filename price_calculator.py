@@ -22,6 +22,6 @@ def best_deal(price_a, qty_a, disc_a, price_b, qty_b, disc_b, tax_pct):
     total_b = final_price(price_b, qty_b, disc_b, tax_pct)
 
     if total_a <= total_b:
-        return print("A")
+        return "A"
     else:
-        return print("B")
+        return "B"
