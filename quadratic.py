@@ -12,7 +12,7 @@ def roots(a, b, c):
 
     elif discriminante == 0:
         r = -b / (2*a)
-        return f"{r}"
+        return f"({r})"
 
     else:
         return f"( )"
@@ -20,12 +20,28 @@ def roots(a, b, c):
 
 def value_y(a, b, c, x):
     y = a*x**2 + b*x + c
-    return f"{y}"
+    return y
 
 
 def to_string(a, b, c):
-    return f"f(x) = {a} * X^2 + {b} * X + {c}"
+    if a == 0 and b == 0:
+        return f"f(x) = {c}"
+
+    if a == 0:
+        return f"f(x) = {b} * X + {c}"
+
+    if b == 0:
+        return f"f(x) = {a} * X^2 + {c}"
 
 
 def derivation(a, b, c):
-    return f"f'(x) = {2*a}x + {b}"
+    if a == 0 and b == 0:
+        return "f'(x) = 0"
+
+    if a == 0:
+        return f"f'(x) = {b}"
+
+    if b == 0:
+        return f"f'(x) = {2 * a} * X"
+
+    return f"f'(x) = {2 * a} * X + {b}"
